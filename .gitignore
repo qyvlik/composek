@@ -1,0 +1,19 @@
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+
+### OSX ###
+
+*.DS_Store
+
+/node_modules/
+/.graphclient/
+/dist/
+*.env
+
+### vscode
+.vscode
+
+.build
