@@ -8,31 +8,24 @@
 ### kcl mod init
 
 ```shell
-kcl mod init compose-spec
+kcl mod init kcl-compose-spec
 ```
 
 ### kcl mod pkg
 
 ```shell
-cd compose-spec
+cd kcl-compose-spec
 kcl mod pkg --target ../.build
 ```
 
-~~### kcl login~~
+### kcl login
 
 ```shell
-kcl registry login artifacthub.io
+kcl registry login ghcr.io
 ```
 
-~~### kcl mod push~~
+### kcl mod push
 
 ```shell
-kcl mod push --tar_path .build/compose-spec_0.1.0.tar artifacthub.io
-```
-
-or
-
-```shell
-cd compose-spec
-kcl mod push artifacthub.io
+kcl mod push --tar_path .build/kcl-compose-spec_0.1.0.tar oci://ghcr.io/qyvlik/kcl-compose-spec
 ```
