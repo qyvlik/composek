@@ -1,4 +1,4 @@
-# kcl-compose-spec
+# composek
 
 - Docker Compose spec: https://github.com/compose-spec/compose-spec
 - KCL: https://www.kcl-lang.io/
@@ -28,4 +28,12 @@ kcl registry login ghcr.io
 
 ```shell
 kcl mod push --tar_path .build/composek_0.1.0.tar oci://ghcr.io/qyvlik/composek
+```
+
+### kcl mod add
+
+
+
+```shell
+kcl mod add oci://ghcr.io/qyvlik/composek:0.1.0
 ```
